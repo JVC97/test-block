@@ -3,5 +3,7 @@ const {Router} = require("express");
 module.exports = function({UserController}){
     const router = Router();
 
-    router.get("/getALL", UserController.getAll());
-}
+    router.get("/getALL", UserController.getAll);
+
+    return router;
+};
